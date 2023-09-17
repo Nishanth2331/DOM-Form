@@ -1,0 +1,49 @@
+label{
+    font-weight: 900;
+    font-size: 30px;
+}
+.header{
+    background-color: antiquewhite;
+}
+#title{
+    text-align: center;
+    color: brown;
+}
+#description{
+    font-size: 25px;
+    display: inline;
+}
+#food{
+    font-size: 20px;
+    color: brown;
+}
+button{
+    border-radius: 13px;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+    width: 100px;
+    height: 40px;
+}
+button:hover{
+    cursor: pointer;
+}
+.genderName{
+    font-size: 20px;
+}
+
+table,tr,th,td{
+   border: 1px solid burlywood;
+}
+
+th{
+    width: 200px;
+    height: 30px;
+    background-color: bisque;
+}
+b{
+    font-size: 30px;
+}
+form{
+    background-color: blanchedalmond;
+}

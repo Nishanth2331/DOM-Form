@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with Forms</title>
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">HTML Form</h1>
+        <p id="description">HTML forms are a way to collect user input on a website. They can be used for a variety of purposes, such as collecting contact information, submitting feedback, or making purchases.
+            HTML forms are made up of a number of different elements, including input fields, buttons, and labels. Input fields are where users enter their information, while buttons are used to submit the form to the server. Labels are used to describe what each input field is for.
+            HTML forms can be styled using CSS to match the design of your website. You can also use JavaScript to validate the input that users enter into the form fields.</p>
+    </div>
+    <form id="form">
+        <label>First Name :</label>
+        <input id="first-name" placeholder="Enter your first name" type="text"/><br/>
+        <label>last Name :</label>
+        <input placeholder="Enter your last name" type="text" id="last-name"/><br/>
+        <label class="g">Gender :</label>
+        <input type="radio" id="gender" name="gender" value="male"/><label class="genderName" >Male</label>
+        <input type="radio" id="gender" name="gender" value="female"/><label class="genderName" >Female</label>
+        <input type="radio" id="gender" name="gender" value="others"/><label class="genderName" >Others</label><br/>  
+        <label>Pincode :</label>
+        <input placeholder="Enter your pincode" type="text" id="pincode"/><br/>
+        <label>Address :</label>
+        <textarea placeholder="Enter your address" id="address"></textarea><br/>  
+        <label>State :</label>
+        <input placeholder="Enter your state name" type="text" id="state"/><br/>
+        <label>Country :</label>
+        <input placeholder="Enter your country name" type="text" id="country"/><br/>
+        <label>Choose the food (min 2): </label>
+        <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Mutton Briyani"/><label id="food">Mutton Briyani</label>
+        <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Paratha"/><label id="food">Paratha</label>
+        <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Veg Noodles"/><label id="food">Veg Noodles</label>
+        <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Momos"/><label id="food">Momos</label>
+        <input style="font-size: 10px;" type="checkbox" name="foods" id="radioForm" value="Chicken Burger"/><label id="food">Chicken Burger</label><br/>
+        <button type="submit" class="btn" id="submit">Submit</button>
+    </form>
+    <div>
+        <table class="table" id="dataTable">
+            <thead><b>USER DATA</b></thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Pincode</th>
+                <th>Address</th>
+                <th>state</th>
+                <th>country</th>
+                <th>food</th>
+            </tr>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="form.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
